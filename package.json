@@ -1,0 +1,21 @@
+{
+  "name": "agent-runtime-reliability",
+  "version": "1.0.0",
+  "description": "Reliability guardrails, circuit breakers, and telemetry for model-backed agents and MCP servers",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "keywords": [
+    "sre",
+    "reliability",
+    "circuit-breaker",
+    "mcp",
+    "telemetry",
+    "agentic-ai",
+    "observability"
+  ],
+  "author": "Soumya Debnath",
+  "license": "MIT"
+}
