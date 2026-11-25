@@ -7,7 +7,7 @@ import crypto from 'node:crypto';
 const PII_PATTERNS = [
   { type: 'EMAIL', regex: /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b/g },
   { type: 'API_KEY', regex: /\b(?:sk-[A-Za-z0-9_-]{12,}|Bearer\s+[A-Za-z0-9._-]{12,})\b/g },
-  { type: 'PHONE', regex: /(?:\+?\d{1,3}[\s-]?)?\(?\d{2,4}\)?[\s-]?\d{3,4}[\s-]?\d{3,4}\b/g }
+  { type: 'PHONE', regex: /(?:\+\d{1,3}[\s-]+)?\(?\d{1,4}\)?[\s-]+\d{3,4}[\s-]+\d{3,4}\b/g }
 ];
 
 const INJECTION_PATTERNS = [
